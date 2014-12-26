@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cegedim.Test</RootNamespace>
+    <AssemblyName>Cegedim.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.0.6.7\lib\Xamarin.UITest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Experimental.cs" />
+    <Compile Include="Features\CallIndependentData.cs" />
+    <Compile Include="Features\Login.cs" />
+    <Compile Include="Features\Search.cs" />
+    <Compile Include="Features\ConvertAppointmentIntoCall.cs" />
+    <Compile Include="Features\OrderEntry.cs" />
+    <Compile Include="Features\OrderEntryEdit.cs" />
+    <Compile Include="Features\PlannerMakeAppointment.cs" />
+    <Compile Include="Features\PlannerMakeTodoItem.cs" />
+    <Compile Include="Features\PlannerMiniCalendar.cs" />
+    <Compile Include="Features\Presentations.cs" />
+    <Compile Include="Features\Routes.cs" />
+    <Compile Include="Features\ToDo.cs" />
+    <Compile Include="Features\Notification.cs" />
+    <Compile Include="Features\BaseTestFixture.cs" />
+    <Compile Include="Globals.cs" />
+    <Compile Include="Features\CallDependentData.cs" />
+    <Compile Include="NewGlobals.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Automation\Xamarin.Automation.Calabash\Xamarin.Automation.Calabash.csproj">
+      <Project>{31598321-8CCE-45CD-B99A-F6F2F56C526D}</Project>
+      <Name>Xamarin.Automation.Calabash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Automation\Xamarin.Automation\Xamarin.Automation.csproj">
+      <Project>{961467B8-30EA-4853-A8EB-B1159E6A6587}</Project>
+      <Name>Xamarin.Automation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cegedim.Automation\Cegedim.Automation.csproj">
+      <Project>{8DEB36A1-1034-43AD-82E1-BC003235FBCD}</Project>
+      <Name>Cegedim.Automation</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

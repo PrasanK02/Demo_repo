@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cegedim.Automation", "Cegedim.Automation\Cegedim.Automation.csproj", "{8DEB36A1-1034-43AD-82E1-BC003235FBCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cegedim.Test", "Cegedim.Test\Cegedim.Test.csproj", "{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{D86B829A-AAF6-4A80-A38A-C80222019346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Automation", "..\Automation\Xamarin.Automation\Xamarin.Automation.csproj", "{961467B8-30EA-4853-A8EB-B1159E6A6587}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Automation.Calabash", "..\Automation\Xamarin.Automation.Calabash\Xamarin.Automation.Calabash.csproj", "{31598321-8CCE-45CD-B99A-F6F2F56C526D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xas", "..\Automation\xas\xas.csproj", "{774C7909-5F36-4447-809D-861C6BD326BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Nuget|Any CPU = Nuget|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Nuget|Any CPU.ActiveCfg = Release|Any CPU
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Nuget|Any CPU.Build.0 = Release|Any CPU
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Nuget|Any CPU.ActiveCfg = Nuget|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Nuget|Any CPU.Build.0 = Nuget|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774C7909-5F36-4447-809D-861C6BD326BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Nuget|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Nuget|Any CPU.Build.0 = Release|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DEB36A1-1034-43AD-82E1-BC003235FBCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Nuget|Any CPU.ActiveCfg = Release|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Nuget|Any CPU.Build.0 = Release|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961467B8-30EA-4853-A8EB-B1159E6A6587}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Nuget|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Nuget|Any CPU.Build.0 = Release|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A8225B-FE31-4ECA-ABDF-1BE6CCF0A813}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{961467B8-30EA-4853-A8EB-B1159E6A6587} = {D86B829A-AAF6-4A80-A38A-C80222019346}
+		{31598321-8CCE-45CD-B99A-F6F2F56C526D} = {D86B829A-AAF6-4A80-A38A-C80222019346}
+		{774C7909-5F36-4447-809D-861C6BD326BD} = {D86B829A-AAF6-4A80-A38A-C80222019346}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Cegedim.Test\Cegedim.Test.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DEB36A1-1034-43AD-82E1-BC003235FBCD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Cegedim.Automation</RootNamespace>
+    <AssemblyName>Cegedim.Automation</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.0.6.7\lib\Xamarin.UITest.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallPage.cs" />
+    <Compile Include="Loader\Interfaces.cs" />
+    <Compile Include="Loader\Model.cs" />
+    <Compile Include="CustomerPages\CustomerActivityHistoryPage.cs" />
+    <Compile Include="CustomerPages\CustomerLocationPage.cs" />
+    <Compile Include="CustomerPages\CustomerRatingsPage.cs" />
+    <Compile Include="DashboardPage.cs" />
+    <Compile Include="DatabaseQueries.cs" />
+    <Compile Include="DropShadowPopover.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="SearchPage.cs" />
+    <Compile Include="PlannerPage.cs" />
+    <Compile Include="CegedimEntity.cs" />
+    <Compile Include="LoginPage.cs" />
+    <Compile Include="Application.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="packages.config" />
+    <Compile Include="CustomerPages\SummaryPage.cs" />
+    <Compile Include="CustomerPages\CustomerPage.cs" />
+    <Compile Include="CustomerPages\CustomerIdentityPage.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="ModifyPopover.cs" />
+    <Compile Include="CallReadPage.cs" />
+    <Compile Include="IncompleteCallsPage.cs" />
+    <Compile Include="ExpressCallPage.cs" />
+    <Compile Include="IncompleteOrdersPage.cs" />
+    <Compile Include="EditOrderEntryPage.cs" />
+    <Compile Include="PresentationsPage.cs" />
+    <Compile Include="RouteBuilderPage.cs" />
+    <Compile Include="TodoPage.cs" />
+    <Compile Include="NotificationsPage.cs" />
+    <Compile Include="NewDashboardPage.cs" />
+    <Compile Include="NewLoginPage.cs" />
+    <Compile Include="NewSearchPage.cs" />
+    <Compile Include="NewDatabaseQueries.cs" />
+    <Compile Include="NewCallPage.cs" />
+    <Compile Include="NewTodoPage.cs" />
+    <Compile Include="NewCegedimEntry.cs" />
+    <Compile Include="NewDropShadowPopover.cs" />
+    <Compile Include="NewApplication.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Automation\Xamarin.Automation.Calabash\Xamarin.Automation.Calabash.csproj">
+      <Project>{31598321-8CCE-45CD-B99A-F6F2F56C526D}</Project>
+      <Name>Xamarin.Automation.Calabash</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Automation\Xamarin.Automation\Xamarin.Automation.csproj">
+      <Project>{961467B8-30EA-4853-A8EB-B1159E6A6587}</Project>
+      <Name>Xamarin.Automation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+</Project>
